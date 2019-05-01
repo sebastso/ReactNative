@@ -18,11 +18,7 @@ const instructions =
   "Press Ctrl+R to reload,\n" + "Shift+F10 or shake for dev menu";
 
 submithandler = () => {
-  (async () => {
-    await Linking.openURL("https://www.hp.com/privacy");
-  })();
-
-  //await Linking.openURL("https://www.hp.com/privacy");
+  Linking.openURL("https://www.hp.com/privacy");
 };
 
 export default class App extends Component<{}> {
